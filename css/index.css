@@ -1,9 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
+
+
 body {
-    background-color: midnightblue;
+    background-color: #181818;
     color: white;
-}
+    font-family: Poppins, Tahoma, sans-serif;
+    font-weight: 300;
+    width: 1280px;
+    margin: 0;
+    display: inline-block;
+    justify-content: center;
+    }
 
 .icon {
     color: white;
     width: 150px;
+}
+
+h1, h2, h3  {
+    font-family: Poppins, Tahoma, sans-serif;
+    font-weight: 800;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #010101;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 0 10px 0 10px;
+    color: white;
+}
+
+#title {
+    font-size: 2rem;
+    font-family: Poppins, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+#banner {
+    background-color: #010101;
+    background-image: url("../img/banner.webp");
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 255px 0 250px 0;
+    margin-top: -10px;
+}
+
+#banner-title {
+    font-size: 3rem;
+    line-height: 1;
 }
