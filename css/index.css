@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;800&display=swap');
-
-
 body {
     background-color: #181818;
-    color: white;
     font-family: Poppins, Tahoma, sans-serif;
     font-weight: 300;
     width: 1280px;
     margin: 0;
-    display: inline-block;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    }
+    --main-color: white;
+    color: var(--main-color);
+}
 
 .icon {
-    color: white;
+    color: var(--main-color);
     width: 150px;
 }
 
@@ -34,11 +34,11 @@ h1, h2, h3  {
 nav a {
     text-decoration: none;
     padding: 0 10px 0 10px;
-    color: white;
+    color: var(--main-color);
 }
 
 #title {
-    font-size: 2rem;
+    font-size: 100%;
     font-family: Poppins, Tahoma, sans-serif;
     font-weight: 300;
 }
@@ -56,4 +56,23 @@ nav a {
 #banner-title {
     font-size: 3rem;
     line-height: 1;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.service {
+    padding: 2% 5% 2% 5%;
+}
+
+.service h3 {
+    margin: 0 0 15px 0;
+}
+
+.service-center {
+    background-color: #101010;
 }
