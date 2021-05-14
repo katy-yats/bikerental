@@ -1,23 +1,45 @@
-body {
-    background-color: #181818;
-    font-family: Poppins, Tahoma, sans-serif;
-    font-weight: 300;
-    width: 1280px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    --main-color: white;
+    --accent-color: orange;
+    --background-darkest: #181818;
+    --text: 1rem;
+    --title-small: 1.5rem;
+    --title-medium: 2.5rem;
+    --title-large: 4 rem;
+}
+
+body {
+    font-family: Poppins, Tahoma, sans-serif;
+    font-weight: 300;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    --main-color: white;
     color: var(--main-color);
+    background-color: var(--background-darkest);
+    max-width: 100vw;
+    min-width: 500px;
+}
+
+.accent-color {
+    color: var(--accent-color);
+}
+
+img {
+    max-width: 100vw;
+    height: auto;
 }
 
 .icon {
-    width: 150px;
+    width: 25vw;
+    max-width: 150px;
+    height: auto;
 }
 
 h1, h2, h3  {
-    font-family: Poppins, Tahoma, sans-serif;
     font-weight: 800;
 }
 
@@ -28,26 +50,32 @@ h1, h2, h3  {
     align-items: center;
     width: 100%;
     background-color: #010101;
+    padding-top: 1.5vw;
 }
 
 nav a {
+    padding: 1vw;
     text-decoration: none;
     flex-shrink: 1;
     color: var(--main-color);
 }
 
+nav a:hover {
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
 #title {
     text-align: left;
     font-size: 100%;
-    font-family: Poppins, Tahoma, sans-serif;
     font-weight: 300;
 }
 
 #banner {
-    background-color: #010101;
+    background-color: var(--background-darkest);
     background-image: url("../img/banner.webp");
     background-position: bottom;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 255px 0 250px 0;
     margin-top: -10px;
@@ -59,14 +87,18 @@ nav a {
 }
 
 .services{
-    display: flex;
+    width: 100vw;
+    height: content-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
     flex-direction: row;
     text-align: center;
     align-items: center;
 }
 
 .service {
-    padding: 2% 5% 2% 5%;
+
+    padding: 5% 5% 7% 5%;
 }
 
 .service h3 {
