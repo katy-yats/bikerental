@@ -12,6 +12,11 @@
     --title-large: 4 rem;
 }
 
+.control-width {
+    width: 980px;
+    justify-content: center;
+}
+
 :root {
     font-family: Poppins, sans-serif;
 }
@@ -23,6 +28,9 @@
 body {
     background-color: var(--background-darkest);
     color: var(--main-color);
+/*    display: flex;
+    flex-direction: row;
+    justify-content: center; */
 }
 
 .icon {
@@ -31,6 +39,57 @@ body {
     height: auto;
 }
 
+#banner {
+    background-color: var(--background-darkest);
+    background-image: url("../img/banner.webp");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 255px 0 250px 0;
+    margin-top: -10px;
+}
+
+.services{
+    width: 100vw;
+    height: content-box;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+.service {
+
+    padding: 5% 5% 7% 5%;
+}
+
+.service h3 {
+    margin: 0 0 15px 0;
+}
+
+#types{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+}
 /*
 body {
     font-family: Poppins, sans-serif;
