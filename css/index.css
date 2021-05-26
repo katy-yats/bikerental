@@ -12,16 +12,34 @@
     --title-large: 4 rem;
 }
 
+:root {
+    font-family: Poppins, sans-serif;
+}
+
+.person-photo{
+    border-radius: 50%;
+}
+
 body {
-    font-family: Poppins, Tahoma, sans-serif;
+    background-color: var(--background-darkest);
+    color: var(--main-color);
+}
+
+.icon {
+    width: 25vw;
+    max-width: 150px;
+    height: auto;
+}
+
+/*
+body {
+    font-family: Poppins, sans-serif;
     font-weight: 300;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: var(--main-color);
     background-color: var(--background-darkest);
-    max-width: 100vw;
-    min-width: 500px;
 }
 
 .accent-color {
@@ -129,3 +147,5 @@ nav a:hover {
 h3 {
     font-size: 1.5rem;
 }
+
+ */
