@@ -39,8 +39,6 @@ function renderTeam (teamMembers) {
                     <p>${member.quote}</p>
                 </article>`;
     }
-
-    teamContainer.innerHTML = html;
 }
 
 
