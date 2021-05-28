@@ -5,6 +5,8 @@
     padding: 0;
     --main-color: white;
     --accent-color: orange;
+    --background-grey: #969696;
+    --background-medium: #525151;
     --background-dark: #181818;
     --background-darkest: #010101;
     --text: 1rem;
@@ -162,7 +164,7 @@ article button {
 }
 
 .side-image {
-    width: 50%;
+   width: 75%;
 }
 
 #accessories {
@@ -213,6 +215,65 @@ footer a:hover {
 }
 
 .person-photo{
-    size: 100px;
+    width: 100px;
     border-radius: 50%;
 }
+
+.horizontal-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: fit-content;
+    align-items: center;
+}
+
+.icon-plus-text {
+    font-display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.bicycle-repairs {
+    text-align: justify;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.top {
+    border-top: 1px solid var(--main-color);
+}
+
+td, th {
+    padding: 7.5px 0 7.5px 0;
+}
+
+#rent {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-color: var(--background-medium);
+    padding: 20px 0 20px 0;
+}
+
+input {
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 60%;
+    background-color: var(--background-grey);
+    padding: 5px;
+    color: var(--main-color);
+    
+}
+
+.accent-button {
+    background-color: var(--accent-color);
+}
+
+::-webkit-input-placeholder {
+    color: var(--main-color);
+}
+

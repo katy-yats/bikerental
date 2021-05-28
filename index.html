@@ -155,50 +155,54 @@
 
         <div id="rent-bike" class="section ">
             <h2 class="section-title">How to Rent a Bike</h2>
-            <div class="horizontal-align">
-                <div id="rent"class="vertical-align">
-                    <article class="item horizontal-align">
+            <div class="horizontal-grid">
+                <div class="">
+                    <article class="icon-plus-text">
                         <img class="icon-small" src="img/pre-register.svg" alt="Pre-register">
                         <span>
-                            <h4>Pre-register</h4><br>
+                            <h4>Pre-register</h4>
                             Plan your tour online and save time on arrival.
                         </span>
                     </article>
 
-                    <article class="item horizontal-align">
+                    <article class="">
                         <img class="icon-small svg-color" src="img/arrival.svg" alt="Arrival and check-in">
                         <span>
-                            <h4>Arrival and check-in</h4> <br>
+                            <h4>Arrival and check-in</h4>
                             Choose your bike, check its condition.
                         </span>
                     </article>
 
-                    <article class="item horizontal-align">
+                    <article class="">
                         <img class="icon-small" src="img/get_a_bike.svg" alt="Get a bike">
-                        <h4>Get a bike</h4> <br>
-                        We have a huge fleet of well-maintained bicycles.
+                        <span>
+                            <h4>Get a bike</h4>
+                            We have a huge fleet of well-maintained bicycles.
+                        </span>
                     </article>
 
-                    <article class="item horizontal-align">
+                    <article class="">
                         <img class="icon-small" src="img/ride.svg" alt="Ride">
-                        <h4>Ride</h4> <br>
-                        Explore nearby parks or join our tours.
+                        <span>
+                            <h4>Ride</h4>
+                            Explore nearby parks or join our tours.
+                        </span>
                     </article>
 
-                    <article class="item horizontal-align">
+                    <article class="">
                         <img class="icon-small" src="img/return.svg" alt="Return">
-                        <h4>Return</h4> <br>
+                        <h4>Return</h4>
                         Share your experience on social media. #cycling
                     </article>
                 </div>
+                <img class="side-image" src="img/how_to_rent_bike.webp">
             </div>
-            <img class="side-image" src="img/how_to_rent_bike.webp">
         </div>
 
         <div id="repairs" class="section ">
             <h2 class="section-title">Repairs</h2>
-            <article class="bicycle-repairs">
-                <img src="img/repairs.webp" alt="Bicycle Repairs">
+            <article class="bicycle-repairs horizontal-grid">
+                <img class="side-image" src="img/repairs.webp" alt="Bicycle Repairs">
                 Nothing irritates more than a broken bicycle.
                 If something happens to your bike, stop wasting time and give it to our bike repair specialists. <br>
                 We are certified with BOVAG. We annually hold specialized seminars to provide our customers with the
@@ -220,7 +224,7 @@
                     <th>Month</th>
                 </tr>
 
-                <tr>
+                <tr class="top">
                     <td>Cruiser</td>
                     <td>5$</td>
                     <td>25$</td>
@@ -228,7 +232,7 @@
                     <td>650$</td>
                 </tr>
 
-                <tr>
+                <tr class="top">
                     <td>Geared</td>
                     <td>$7</td>
                     <td>$30</td>
@@ -236,7 +240,7 @@
                     <td>$790</td>
                 </tr>
 
-                <tr>
+                <tr class="top">
                     <td>E-bicycle</td>
                     <td>$15</td>
                     <td>$65</td>
@@ -244,7 +248,7 @@
                     <td>$990</td>
                 </tr>
 
-                <tr>
+                <tr class="top">
                     <td>Tandem</td>
                     <td>$8</td>
                     <td>$40</td>
@@ -252,7 +256,7 @@
                     <td>$875</td>
                 </tr>
 
-                <tr>
+                <tr class="top">
                     <td>Under 20"</td>
                     <td>$10</td>
                     <td>$50</td>
@@ -265,24 +269,14 @@
         <div id="rent" class="section ">
             <h2 class="section-title">Want to rent a bike?</h2>
             <form method="POST" action="https://formspree.io/f/mpzkpall">
-                <label>
-                    Your name: <input type="text" placeholder="Name*" name="name" required>
-                </label>
-                <label>
-                    Phone number: <input type="tel" placeholder="Phone number*" name="telephone" required>
-                </label>
-                <label>
-                    E-mail: <input type="email" placeholder="Email*" name="email" required>
-                </label>
-                <label>
-                    Start date & time: <input type="date" placeholder="Start date & time*" name="start-date"
-                        required>
-                </label>
-                <label>
-                    Finish date & time: <input type="date" placeholder="Finish date & time*" name="finish-date"
-                        required>
-                </label>
-                <input type="submit" value="Book a bike">
+                <p>Fill in the form and we will get in touch with
+                    you as soon as possible!</p>
+                <input type="text" placeholder="Name*" name="name" required>
+                <input type="tel" placeholder="Phone number*" name="telephone" required>
+                <input type="email" placeholder="Email*" name="email" required>
+                <input type="date" placeholder="Start date & time*" name="start-date" required>
+                <input type="date" placeholder="Finish date & time*" name="finish-date" required>
+                <input class="accent-button" type="submit" value="Book a bike">
             </form>
         </div>
 
@@ -318,8 +312,8 @@
 
         <div id="testimonials" class="section ">
             <h2 class="section-title">Testimonials</h2>
-        <div id="carouselTestimonialsControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
+        <div id="carouselTestimonialsControls" class="carousel" data-bs-ride="carousel">
+            <div class="carousel slide">
               <div class="carousel-item active">
                 <img src="img/amanda_peterson.webp" class="d-block person-photo" alt="Amanda Peterson">
                 <h3 class="person-name">Amanda Peterson</h3>
