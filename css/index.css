@@ -143,3 +143,76 @@ article button {
     background-image: url("../img/baby_seat.webp");
 }
 
+.horizontal-align {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vertical-align {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.icon-small {
+    width: 65px;
+}
+
+.side-image {
+    width: 50%;
+}
+
+#accessories {
+    margin: 25px 0 25px 0;
+}
+
+.bicycle-repairs {
+    display: grid;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 50px 0 0 15px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 1px;
+    margin: 0 5px 0 0;
+}
+
+footer a:hover {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.svg-color {
+    fill: var(--accent-color);
+
+}
+
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.person-photo{
+    size: 100px;
+    border-radius: 50%;
+}
