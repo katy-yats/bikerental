@@ -212,12 +212,14 @@ footer a:hover {
 
 }
 
-.carousel-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+/* .carousel-inner {
+    width: 80%;
 }
+.carousel-item {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}  */
 
 .person-photo{
     width: 100px;
@@ -416,4 +418,23 @@ article.person:hover {
 }
 
 
+.carousel{
+    margin-top: 50px;
+  }
+.carousel-inner{
+    height: 400px;
+  }
+.carousel-caption{
+    color: var(--main-color);
+    top: 50%;
+  }
+  
+.date {
+    display: block;
+    margin-top: 20px;
+    font-size: var(--text-small);
+}
 
+.carousel-caption .job-title {
+    font-size: var(--text-small);
+}
