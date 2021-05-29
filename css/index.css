@@ -9,6 +9,7 @@
     --background-medium: #525151;
     --background-dark: #181818;
     --background-darkest: #010101;
+    --text-small: 0.75rem;
     --text: 1rem;
     --title-small: 1.5rem;
     --title-medium: 2.5rem;
@@ -86,8 +87,7 @@ header {
 }
 
 .icon {
-    width: 25vw;
-    max-width: 150px;
+    max-width: 100px;
     height: auto;
 }
 
@@ -164,7 +164,7 @@ article button {
 }
 
 .side-image {
-   width: 75%;
+   width: 100%;
 }
 
 #accessories {
@@ -181,6 +181,7 @@ footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     padding: 50px 0 0 15px;
+    font-size: var(--text-small);
 }
 
 .footer-column {
@@ -199,6 +200,10 @@ footer a {
 
 footer a:hover {
     color: var(--accent-color);
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: var(--accent-color) !important;
     font-weight: 600;
 }
 
@@ -227,7 +232,7 @@ footer a:hover {
 }
 
 .icon-plus-text {
-    font-display: grid;
+    display: grid;
     grid-template-columns: 20% 80%;
 }
 
@@ -266,14 +271,146 @@ input {
     background-color: var(--background-grey);
     padding: 5px;
     color: var(--main-color);
-    
+    font-weight: 300;
 }
 
 .accent-button {
     background-color: var(--accent-color);
+    font-weight: 500;
 }
 
 ::-webkit-input-placeholder {
     color: var(--main-color);
+    font-weight: 300;
 }
+
+.inner {
+    padding: 1% 2% 1% 2%;
+}
+
+.two-by-two {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 30px 20px;
+    padding: 0 5% 0 5%;
+}
+
+.two-by-two .icon {
+    margin: 5%;
+}
+
+#contact_us {
+    background-color: var(--accent-color);
+    padding: 15px auto 15px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#contact_us h3 {
+    padding: 6%
+}
+
+.dark-button {
+    padding: 3% 5% 3% 5%;
+    margin: auto;
+    background-color: var(--background-darkest);
+    color: var(--main-color);
+    border: none;
+    font-weight: 300;
+}
+
+.dark-button:hover {
+    background-color: var(--background-medium);
+}
+
+.ourTeam {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px;
+    text-align: center;
+    margin: auto;
+    justify-content: center;
+}
+
+article.person {
+    padding: 10px;
+    border: 1px solid var(--main-color);
+}
+
+article.person:hover {
+    border: 1px solid var(--accent-color);
+}
+
+.job-title {
+    color: var(--accent-color);
+    font-size: var(--text);
+}
+
+.person-name {
+    font-size: var(--title-small);
+}
+
+.news {
+    background-color: var(--background-dark);
+    text-align: left;
+    margin: 2% 5% 2% 5%;
+    padding: 2%;
+    font-size: var(--text);
+}
+.news-date {
+    font-size: var(--text);
+}
+
+.three-by-two {
+    display: grid;
+    padding: 0 5% 0 5%;
+    grid-template-columns: auto auto auto;
+}
+
+.three-by-two article {
+    font-size: var(--text);
+    margin: 10% 5% 10% 5%;
+}
+
+#contacts {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    text-align: left;
+    padding: 5%;
+}
+
+#contact-info table {
+    margin: 20px 0 0 0;
+    font-size: var(--text-small);
+    text-align: left;
+}
+
+#contact-form {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--background-medium);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: auto;
+}
+
+#contact-from input {
+    margin: auto;
+    width: 80%;
+
+}
+
+#contact-from ::-webkit-input-placeholder {
+    font-size: var(--text-small);
+}
+
+
 

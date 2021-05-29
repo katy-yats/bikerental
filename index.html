@@ -156,7 +156,7 @@
         <div id="rent-bike" class="section ">
             <h2 class="section-title">How to Rent a Bike</h2>
             <div class="horizontal-grid">
-                <div class="">
+                <div>
                     <article class="icon-plus-text">
                         <img class="icon-small" src="img/pre-register.svg" alt="Pre-register">
                         <span>
@@ -165,7 +165,7 @@
                         </span>
                     </article>
 
-                    <article class="">
+                    <article class="icon-plus-text">
                         <img class="icon-small svg-color" src="img/arrival.svg" alt="Arrival and check-in">
                         <span>
                             <h4>Arrival and check-in</h4>
@@ -173,7 +173,7 @@
                         </span>
                     </article>
 
-                    <article class="">
+                    <article class="icon-plus-text">
                         <img class="icon-small" src="img/get_a_bike.svg" alt="Get a bike">
                         <span>
                             <h4>Get a bike</h4>
@@ -181,7 +181,7 @@
                         </span>
                     </article>
 
-                    <article class="">
+                    <article class="icon-plus-text">
                         <img class="icon-small" src="img/ride.svg" alt="Ride">
                         <span>
                             <h4>Ride</h4>
@@ -189,10 +189,12 @@
                         </span>
                     </article>
 
-                    <article class="">
+                    <article class="icon-plus-text">
                         <img class="icon-small" src="img/return.svg" alt="Return">
-                        <h4>Return</h4>
-                        Share your experience on social media. #cycling
+                        <span>
+                            <h4>Return</h4>
+                            Share your experience on social media. #cycling
+                        </span>
                     </article>
                 </div>
                 <img class="side-image" src="img/how_to_rent_bike.webp">
@@ -201,7 +203,7 @@
 
         <div id="repairs" class="section ">
             <h2 class="section-title">Repairs</h2>
-            <article class="bicycle-repairs horizontal-grid">
+            <article class="bicycle-repairs">
                 <img class="side-image" src="img/repairs.webp" alt="Bicycle Repairs">
                 Nothing irritates more than a broken bicycle.
                 If something happens to your bike, stop wasting time and give it to our bike repair specialists. <br>
@@ -282,32 +284,34 @@
 
         <div id="group-tours" class="section ">
             <h2 class="section-title">Group Tours</h2>
-            <article>
-                <img class="icon" src="img/team_building.svg" alt="Team building">
-                <h4>Team Building</h4>
-                Think differently, gather your friends and use your creative minds and innovative ideas to break down
-                the barriers.
-            </article>
+            <div class="types">
+                <article class="inner">
+                    <img class="icon" src="img/team_building.svg" alt="Team building">
+                    <h4>Team Building</h4>
+                    Think differently, gather your friends and use your creative minds and innovative ideas to break down
+                    the barriers.
+                </article>
 
-            <article>
-                <img class="icon" src="img/school_groups.svg" alt="School Groups">
-                <h4>School Groups</h4>
-                Children always like events in fresh air. Make your event fun and at the same time educational.
-            </article>
+                <article class="inner">
+                    <img class="icon" src="img/school_groups.svg" alt="School Groups">
+                    <h4>School Groups</h4>
+                    Children always like events in fresh air. Make your event fun and at the same time educational.
+                </article>
 
-            <article>
-                <img class="icon" src="img/wedding.svg" alt="Weddings">
-                <h4>Weddings</h4>
-                If you love riding a bike you can use it for your big day. Ride with your beloved one and enjoy your
-                special wedding!
-            </article>
+                <article class="inner">
+                    <img class="icon" src="img/wedding.svg" alt="Weddings">
+                    <h4>Weddings</h4>
+                    If you love riding a bike you can use it for your big day. Ride with your beloved one and enjoy your
+                    special wedding!
+                </article>
 
-            <article>
-                <img class="icon" src="img/family.svg" alt="Family">
-                <h4>Family</h4>
-                Our city is a great place to explore riding a bicycle. Have a relaxing family bicycle tour of the most
-                popular sites.
-            </article>
+                <article class="inner">
+                    <img class="icon" src="img/family.svg" alt="Family">
+                    <h4>Family</h4>
+                    Our city is a great place to explore riding a bicycle. Have a relaxing family bicycle tour of the most
+                    popular sites.
+                </article>
+            </div>
         </div>
 
         <div id="testimonials" class="section ">
@@ -345,15 +349,16 @@
           </div>
 
         <div id="map">
-
+            <iframe style="filter: invert(90%);" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1705.9042237290253!2d-0.1356496601682287!3d51.50945590287513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604d1584a4603%3A0x9e81906dbf96f23f!2s24-36%20Regent%20St%2C%20St.%20James&#39;s%2C%20London%20SW1Y%204QF%2C%20UK!5e0!3m2!1sen!2sua!4v1622287124735!5m2!1sen!2sua" width="980" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
 
         <div id="contact_us" class="section ">
-            Want to know more about our tours?
-            <button>Contact us</button>
+            <h3>Want to know more<br>about our tours?</h3>
+            <button class="dark-button">Contact us</button>
         </div>
 
-        <div id="about" class="section ">
+        <div id="about" class="section bicycle-repairs">
+            <img class="side-image" src="img/about.webp" >
             <article>
                 <h2 class="section-title">About Funny Bikes</h2>
                 We were founded in 2010 by two bike enthusiasts David and Peter.
@@ -372,7 +377,8 @@
 
         <div id="why-choose-us" class="section ">
             <h2 class="section-title">Why Choose Us</h2>
-            <div>
+            <div class="two-by-two">
+            <div class="icon-plus-text">
                 <img class="icon" src="img/experienced_repairs.svg" alt="Experienced repairs team">
                 <article>
                     <h3>Experienced repairs team</h3>
@@ -380,7 +386,7 @@
                 </article>
             </div>
 
-            <div>
+            <div class="icon-plus-text">
                 <img class="icon" src="img/helmets.svg" alt="Helmet">
                 <article>
                     <h3>Helmets</h3>
@@ -388,7 +394,7 @@
                 </article>
             </div>
 
-            <div>
+            <div class="icon-plus-text">
                 <img class="icon" src="img/locks.svg" alt="Locks">
                 <article>
                     <h3>Locks</h3>
@@ -396,12 +402,13 @@
                 </article>
             </div>
 
-            <div>
+            <div class="icon-plus-text">
                 <img class="icon" src="img/delivery.svg" alt="Delivery">
                 <article>
                     <h3>Delivery</h3>
                     Rent a bike, and we will deliver it to any location at no charge.
                 </article>
+            </div>
             </div>
         </div>
 
@@ -409,14 +416,14 @@
             <h2 class="section-title">News</h2>
             <article class="news">
                 <h3 class="news-titles">Bike-Sharing Access for 3 Days is Back on Sale!</h3>
-                <h4 class="news-date">01 September</h4>
+                <h4 class="news-date accent-color">01 September</h4>
                 The weekend is almost here, and we have decided to turn on the Weekend access once more.<br>
                 Have three-day access and make tours paying only after the 61st minute of your ride.
             </article>
 
             <article class="news">
                 <h3 class="news-titles">Take Part in the Night Bike Parade on the 24th of August!</h3>
-                <h4 class="news-date">22 August</h4>
+                <h4 class="news-date accent-color">22 August</h4>
                 The Parade will start at the Independence Square at 10:00pm.
                 The route will cover about 20 kilometers.
                 Space travel will be the theme of the parade.
@@ -426,7 +433,7 @@
 
             <article class="news">
                 <h3 class="news-titles">Price cut</h3>
-                <h4 class="news-date">29 July</h4>
+                <h4 class="news-date accent-color">29 July</h4>
                 Please take notice, the seasonal access price will be decreased since July 28th:<br>
                 "Season" access price - $90,<br>
                 "Season 45 mins" access price - $19.<br>
@@ -436,41 +443,43 @@
 
         <div id="rental-terms" class="section ">
             <h2 class="section-title">Rental Terms</h2>
-            <article>
-                <h3>Security Deposit</h3>
-                We ask a security deposit on all bikes or cycling gear you rent. You can make a payment via a debit or
-                credit card. We cannot return you money until the gear is returned.
-            </article>
+            <div class="three-by-two">
+                <article>
+                    <h4>Sequrity Deposit</h4>
+                    We ask a security deposit on all bikes or cycling gear you rent. You can make a payment via a debit or
+                    credit card. We cannot return you money until the gear is returned.
+                </article>
 
-            <article>
-                <h3>Damage</h3>
-                If you want to rent a bike or any cycling gear, you will be responsible for it until the time of return.
-                The theft and any possible bike damage are included.
-            </article>
+                <article>
+                    <h4>Damage</h4>
+                    If you want to rent a bike or any cycling gear, you will be responsible for it until the time of return.
+                    The theft and any possible bike damage are included.
+                </article>
 
-            <article>
-                <h3>Age Restrictions</h3>
-                If you want to rent a bike, you have to be at least 18 years old. Don't forget to bring your passport or
-                driver’s license. Younger participants need to be accompanied by a parent or guardian.
-            </article>
+                <article>
+                    <h4>Age Restrictions</h4>
+                    If you want to rent a bike, you have to be at least 18 years old. Don't forget to bring your passport or
+                    driver’s license. Younger participants need to be accompanied by a parent or guardian.
+                </article>
 
-            <article>
-                <h3>Riding Rules</h3>
-                All the renters have to stick to traffic rules, signs, laws, and regulations during the riding trip. It
-                is advisable not to use smartphones or cameras..
-            </article>
+                <article>
+                    <h4>Riding Rules</h4>
+                    All the renters have to stick to traffic rules, signs, laws, and regulations during the riding trip. It
+                    is advisable not to use smartphones or cameras..
+                </article>
 
-            <article>
-                <h3>Helmets</h3>
-                Additionally, we provide all our clients with mandatory helmets fitted right to your size. Be careful on
-                the road!
-            </article>
+                <article>
+                    <h4>Helmets</h4>
+                    Additionally, we provide all our clients with mandatory helmets fitted right to your size. Be careful on
+                    the road!
+                </article>
 
-            <article>
-                <h3>Returning Equipment</h3>
-                Return our bike or gear at least 15 minutes prior to our closing time to check it out. We usually work
-                till 6pm in spring and 7pm in summer.
-            </article>
+                <article>
+                    <h4>Returning Equipment</h4>
+                    Return our bike or gear at least 15 minutes prior to our closing time to check it out. We usually work
+                    till 6pm in spring and 7pm in summer.
+                </article>
+            </div>
         </div>
 
         <div id="contacts" class="section ">
@@ -480,34 +489,26 @@
                 to get in touch with us.
                 <table>
                     <tr>
-                        <th>Address</th>
+                        <th class="accent-color">Address</th>
                         <td>3611 Silas Trail Suite 927<br>Port Yasmeenland, PY 20061</td>
                     </tr>
                     <tr>
-                        <th>Hours</th>
+                        <th class="accent-color">Hours</th>
                         <td>Monday-Saturday: 11am-9pm<br>Sunday: 11am-7pm</td>
                     </tr>
                     <tr>
-                        <th>Contacts</th>
+                        <th class="accent-color">Contacts</th>
                         <td>+1 (234) 567 89 00<br>funnyy.bikes@email.com</td>
                     </tr>
                 </table>
             </div>
 
-            <div id="contact-form" class="section ">
+            <div id="contact-form">
                 <form method="POST" action="https://formspree.io/f/xzbydqaz">
-                    <label>
-                        Your name: <input type="text" placeholder="Name*" name="username" required>
-                    </label>
-                    <label>
-                        Phone number: <input type="tel" placeholder="Phone number*" name="telephone" required>
-                    </label>
-                    <label>
-                        E-mail: <input type="email" placeholder="Email*" name="email" required>
-                    </label>
-                    <label>
-                        Message: <input type="text" name="message" placeholder="Type your message">
-                    </label>
+                    <input type="text" placeholder="Name*" name="username" required>
+                    <input type="tel" placeholder="Phone number*" name="telephone" required>
+                    <input type="email" placeholder="Email*" name="email" required>
+                    <input type="text" name="message" placeholder="Type your message">
                     <input type="submit" value="Contact us">
                 </form>
             </div>
