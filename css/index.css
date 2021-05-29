@@ -411,6 +411,9 @@ article.person:hover {
 #contact-from ::-webkit-input-placeholder {
     font-size: var(--text-small);
 }
+.section {
+    margin: 5% 0 5% 0;
+}
 
 
 
