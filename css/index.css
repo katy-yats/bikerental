@@ -174,7 +174,6 @@ article button {
 
 .bicycle-repairs {
     display: grid;
-    display: grid;
     grid-template-columns: auto auto;
 }
 
@@ -190,7 +189,6 @@ footer {
     display: flex;
     flex-direction: column;
     height: fit-content;
-    margin: 20px;
 }
 
 footer a {
@@ -214,15 +212,6 @@ footer a:hover {
     fill: var(--accent-color);
 
 }
-
-/* .carousel-inner {
-    width: 80%;
-}
-.carousel-item {
-    width: 80%;
-    display: flex;
-    justify-content: center;
-}  */
 
 .person-photo{
     width: 100px;
@@ -252,7 +241,7 @@ table {
 }
 
 .top {
-    border-top: 1px solid var(--main-color);
+    border-top: 1px solid var(--background-medium);
 }
 
 td, th {
@@ -411,7 +400,7 @@ article.person:hover {
 }
 
 #contact-form input, textarea {
-    width: 90%;
+    width: 95%;
     display: block;
     margin: 15px auto 15px auto;
     background-color: var(--background-medium);
@@ -452,4 +441,17 @@ article.person:hover {
 
 .carousel-caption .job-title {
     font-size: var(--text-small);
+}
+
+
+select {
+    display: inline-block;
+    background-color: var(--background-darkest);
+    color: var(--main-color);
+    border: none;
+    font-weight: 300;
+}
+
+.navbar-nav {
+    align-items: center;
 }
