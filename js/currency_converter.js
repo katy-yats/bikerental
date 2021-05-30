@@ -1,4 +1,4 @@
-async function convertCurrency() {
+/* async function convertCurrency() {
     const startCurrency = 'USD';
     const targetCurrency = document.querySelector('.currency-switch').value;
     const response = await fetch('https://api.exchangerate-api.com/v4/latest/USD');
@@ -12,3 +12,9 @@ async function convertCurrency() {
         products.convertedCurrency = targetCurrency;
     }
 }
+
+document.querySelector('.currency-switch')
+    .addEventListener('onchange', async () => {
+        await convertCurrency();
+        renderProducts();
+    }); */

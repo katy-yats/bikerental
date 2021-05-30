@@ -45,61 +45,13 @@ function renderTeam (teamMembers) {
 renderTeam(JSON.parse(teamMembers));
 
 
-const products = `
-[
-    {
-       "id":"1",
-       "type": "Cruiser",
-       "price1": "5",
-       "price2": "25",
-       "price3": "135",
-       "price4": "650"
-    },
-    
-    {
-       "id":"2",
-       "type":"Geared",
-       "price1": "7",
-       "price2": "30",
-       "price3": "170",
-       "price4": "790"
-    },
-
-    {
-       "id":"3",
-       "type":"E-bicycle",
-       "price1": "15",
-       "price2": "65",
-       "price3": "275",
-       "price4": "990"
-    },
-
-    {
-       "id":"4",
-       "type": "Tandem",
-       "price1": "8",
-       "price2": "40",
-       "price3": "220",
-       "price4": "875"
-    },
-
-    {
-       "id":"5",
-       "type":"Under 20",
-       "price1": "10",
-       "price2": "50",
-       "price3": "245",
-       "price4": "900"
-    }
- ]`;
 
 
-function renderProducts (products) {
+function renderProducts () {
     const productContainer = document.querySelector('.product-list');
     
-    
-
     for (const product of products) {
+    
         productContainer.innerHTML +=
                 ` <tr class="top product">
                         <td>${product.type}</td>
@@ -108,9 +60,17 @@ function renderProducts (products) {
                         <td>${product.price3}</td>
                         <td>${product.price4}</td>
                 </tr>`;
-    }
-    convertCurrency();
+    }    
 }
 
+let products;
 
-renderProducts(JSON.parse(products));
+async function fetchProducts() {
+    fetch('products.json')
+        .then(response => response.json())
+        .then(productsFromServer => products = productsFromServer)
+        .then( () => renderProducts());
+}
+
+fetchProducts();
+
