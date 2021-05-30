@@ -52,6 +52,13 @@ header {
     align-items: center;
 }
 
+@media (max-width: 500px) {
+    .services {
+        display: grid;
+        grid-template-columns: auto;
+    }    
+}
+
 .service {
     background-color: var(--background-dark);
     padding: 5% 5% 7% 5%;
@@ -80,6 +87,12 @@ header {
     width: inherit;
 }
 
+@media (max-width: 500px) {
+    .types {
+        flex-direction: column;
+    }
+}
+
 .item-bikes {
     width: 32%;
     padding: 1%;
@@ -95,6 +108,12 @@ header {
     width: 95%;
     height: auto;
     margin: 20px 0 20px 0;
+}
+
+@media (max-width: 500px) {
+    .item-bikes {
+        width: 100%;
+    }
 }
 
 .price {
@@ -177,6 +196,13 @@ article button {
     grid-template-columns: auto auto;
 }
 
+@media (max-width: 500px) {
+    .bicycle-repairs {
+        grid-template-columns: auto;
+        padding: 2%;
+    }
+}
+
 footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -224,6 +250,13 @@ footer a:hover {
     height: fit-content;
     align-items: center;
 }
+
+@media (max-width: 500px) {
+    #rent-bike .horizontal-grid {
+        grid-template-columns: auto;
+    }
+}
+
 
 .icon-plus-text {
     display: grid;
@@ -294,6 +327,15 @@ td, th {
     margin: 5%;
 }
 
+@media (max-width: 500px) {
+    .two-by-two {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 30px 20px;
+        padding: 0 5% 0 5%;
+    }
+}
+
 #contact_us {
     background-color: var(--accent-color);
     padding: 15px auto 15px auto;
@@ -325,6 +367,14 @@ td, th {
     text-align: center;
     margin: auto;
     justify-content: center;
+}
+
+@media (max-width: 500px){
+    .ourTeam {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 4%;
+    }
 }
 
 article.person {
@@ -424,14 +474,14 @@ article.person:hover {
 
 .carousel{
     margin-top: 50px;
-  }
+}
 .carousel-inner{
     height: 400px;
-  }
+}
 .carousel-caption{
     color: var(--main-color);
     top: 50%;
-  }
+}
   
 .date {
     display: block;
