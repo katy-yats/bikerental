@@ -143,7 +143,7 @@
 
         <div id="accessories" class="section types">
             <article class="background-picture tag-along">
-                Tag-along
+                <span>Tag-along</span>
             </article>
             <article class="background-picture bicycle-trailer">
                 Bicycle trailer
@@ -324,7 +324,7 @@
                         <h3 class="person-name">Amanda Peterson</h3>
                         <h4 class="job-title">Marketing Director at Fresh Food Co.</h4>
                         <span>"What a perfect tour! The bike tour with Funny Bikes was the best part of our summer holidays. All the  guides were very friendly, they really made the ride safe and extremely exciting. Thanks for the unforgettable memories!"</span>
-                        <span class="date">July 15, 2018</span>
+                        <span class="date">July 15, 2018</h4>
                     </div>
                   </div>
                   <div class="carousel-item">
@@ -505,12 +505,14 @@
             </div>
 
             <div id="contact-form">
-                <form method="POST" action="https://formspree.io/f/xzbydqaz">
+                <form class="contact-form" method="POST" action="https://formspree.io/f/xzbydqaz">
+                    <div>
                     <input type="text" placeholder="Name*" name="username" required>
                     <input type="tel" placeholder="Phone number*" name="telephone" required>
                     <input type="email" placeholder="Email*" name="email" required>
-                    <input type="text" name="message" placeholder="Type your message">
-                    <input type="submit" value="Contact us">
+                    <textarea class="message" type="text" name="message" placeholder="Type your message">Type your message</textarea>
+                    <input class="accent-button" type="submit" value="Contact us">
+                    </div>
                 </form>
             </div>
 
