@@ -206,20 +206,35 @@ article button {
 footer {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    padding: 50px 0 0 15px;
+    padding: 50px 0 25px 15px;
     font-size: var(--text-small);
 }
 
-.footer-column {
-    margin: 25px;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
+@media (max-width: 500px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto;
+        padding: 10px 0 25px 15px;
+        font-size: var(--text-small);
+        text-align: center;
+    }
+
+    .social-networks {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5% 15% 5% 15%;
+    }
+
+    .footer-column {
+        margin: 3%;        
+    }
 }
+
+
 
 footer a {
     display: inline-block;
-    
     margin: 5px 20px 5px 20px;
     text-decoration: none;
     color: var(--main-color);
@@ -412,6 +427,13 @@ article.person:hover {
     grid-template-columns: auto auto auto;
 }
 
+@media (max-width: 500px) {
+    .three-by-two {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
 .three-by-two article {
     font-size: var(--text);
     margin: 10% 5% 10% 5%;
@@ -428,6 +450,25 @@ article.person:hover {
     justify-items: center;
     text-align: left;
     padding: 5%;
+}
+
+@media (max-width: 500px) {
+    #contacts {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #contact-form {
+        width: 90%;
+        background-color: var(--background-dark);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        color: var(--main-color);
+        padding: 20px;
+    }
 }
 
 #contact-info table {
@@ -504,4 +545,17 @@ select {
 
 .navbar-nav {
     align-items: center;
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.social-networks img {
+    display: inline-block;
+    margin: auto;
+    width: 20px;
 }
