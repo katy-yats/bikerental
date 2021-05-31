@@ -39,6 +39,14 @@ body {
     margin-top: -10px;
 }
 
+@media (max-width: 500px) {
+    #banner {
+        padding: 100px 0 100px 0;
+        background-position: right;
+        background-size: cover;
+    }
+}
+
 header {
     background-color: var(--background-darkest);
 }
